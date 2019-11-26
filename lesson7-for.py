@@ -1,4 +1,4 @@
-#todo list
+ #todo list
 print('Jeśli chcesz dodać rzecz do listy, naciśnij [D]')
 print('Jeśli chcesz usunąć rzecz z listy, naciśnij [U]')
 print('Jesli chcesz wydrukowac liste ToDo, naciśnij [P]')
