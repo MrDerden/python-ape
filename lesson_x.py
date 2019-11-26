@@ -64,4 +64,4 @@ while film_name:
 	elif not ((film_name in detektyw) and (film_name in action) and (film_name in fantasy)):
 		film_name = input('Wpisz inną nazwe filmu\n')
 	 
-	
+#just string to commit
