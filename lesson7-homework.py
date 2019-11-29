@@ -14,7 +14,7 @@ def words_game(words):
 
 list_with_words = ['python', 'dzik', 'piwo', 'tlen']
 words_game(list_with_words)
-
+'''
 '''
 import random
 list_with_words = ['python', 'dzik', 'piwo', 'tlen']
@@ -27,3 +27,27 @@ for word in  list_with_words:
 		if user_answer != word:
 			print('No')
 	print('Yes')
+'''
+import random
+
+def mieszanka(slowo_do_zmieszania):
+	mieszanka_list = []
+	for litera in slowo_do_zmieszania:
+		mieszanka_list.append(litera)
+		random.shuffle(mieszanka_list)
+		mieszanka_str = ''
+		for el in mieszanka_list:
+			mieszanka_str += el
+	return mieszanka_str
+
+list_with_words = ['piwo', 'wódka', 'ganja', 'piątek']
+user_answer = ''
+for word in list_with_words:
+	while user_answer != word:
+		user_q = mieszanka(word)
+		user_answer = input('Jakie to słowo: [{}]? '.format(user_q))
+		if user_answer != word:
+			print ('Nie')
+	print('Tak')
+print('You win!')
+
