@@ -44,7 +44,7 @@ elif age >= 12:
 '''
 
 # filmowy doradca
-
+'''
 detektyw = ['kolombo', 'chinatown', 'puaro']
 action = ['comando', 'terminator', 'rambo']
 fantasy = ['lord of the rings', 'avatar', 'hobbit']
@@ -63,5 +63,16 @@ while film_name:
 		break
 	elif not ((film_name in detektyw) and (film_name in action) and (film_name in fantasy)):
 		film_name = input('Wpisz inną nazwe filmu\n')
-	 
+'''	 
 #just string to commit
+
+#проебал 11 сделанных задач с w3school из-за экспериментов с ебаной веткой гита
+#11 Write a Python function that takes two lists and returns True if they have at least one common member.
+
+def lists_comparer (list1, list2):
+	for el1 in list1:
+		for el2 in list2:
+			if el1 == el2:
+				return True
+
+print(lists_comparer([1, 5, ' dsdcsdcsdcs'], ['xadsxadxasxaxs', 'de', 1]))
