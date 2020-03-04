@@ -1,0 +1,10 @@
+FLASK
+
+1. Zainstaluj flaska
+	pip install -U Flask
+	jeśli jest problem:
+		curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+		python get-pip.py
+
+2. Prześledź pliki server.py i 3 kolejne template.py
+3. Potem przejdź do zadania horoskop.py oraz kurs_walut.py
